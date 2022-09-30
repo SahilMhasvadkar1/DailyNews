@@ -9,10 +9,10 @@ on:
  workflow_dispatch:
 
 env:
-MAIL_USER_EMAIL: ${{ secrets.MAIL_USER_EMAIL }}
-MAIL_USER_PASSWORD: ${{ secrets.MAIL_USER_PASSWORD }}
-MAIL_FROM: ${{ secrets.MAIL_USER_FROM }}
-MAIL_TO: ${{ secrets.MAIL_USER_TO }}
+ MAIL_USER_EMAIL: ${{ secrets.MAIL_USER_EMAIL }}
+ MAIL_USER_PASSWORD: ${{ secrets.MAIL_USER_PASSWORD }}
+ MAIL_FROM: ${{ secrets.MAIL_USER_FROM }}
+ MAIL_TO: ${{ secrets.MAIL_USER_TO }}
 
 jobs:
   report:
