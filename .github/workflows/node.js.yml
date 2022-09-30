@@ -5,7 +5,7 @@ name: DailyNews
 
 on:
  schedule:
- - cron: "*/10 * * * *"
+ - cron: "0 14 * * *"
  workflow_dispatch:
 
 env:
@@ -30,7 +30,7 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-        cache: 'npm'
+     
     - run: npm ci
   
     - run: node src/main.js
