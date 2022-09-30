@@ -21,7 +21,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [16.x]
+        node-version: [14.x]
 
     steps:
     - uses: actions/checkout@v3
@@ -31,6 +31,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
      
-    - run: npm ci
+    - run: yarn install
+#     - run: npm ci
   
     - run: node src/main.js
